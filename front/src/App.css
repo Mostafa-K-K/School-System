@@ -1,0 +1,1007 @@
+@font-face {
+  font-family: SegoeUI;
+  src: local("Segoe UI"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: local("Segoe UI Bold"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+  font-weight: 600;
+}
+
+* {
+  font-family: SegoeUI;
+  text-align: center;
+}
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  background-image: linear-gradient(#6D6F73, #37383a);
+  height: 100vh;
+}
+
+.containerLongPic {
+  background-image: linear-gradient(#6D6F73, #37383a);
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px, 10%;
+  width: 100%;
+  height: 150px;
+  background-color: #C0212E;
+}
+
+.logo {
+  width: 8rem;
+  margin: 50px;
+}
+
+.login-button {
+  width: 100px;
+  height: 35px;
+  background-color: #FFFFFF;
+  color: #707070;
+  font-size: 15px;
+  margin: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+}
+
+.login-button:hover {
+  background-color: #c0212e;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.divider {
+  height: 15px;
+  background-color: #FFFFFF;
+}
+
+.mySlides {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.divider_2 {
+  height: 15px;
+  background-color: #FFFFFF;
+}
+
+.h1-contact-us {
+  width: 100%;
+  height: 5rem;
+  background: rgb(109, 111, 115);
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+.h1-contact-us:before {
+  display: block;
+  width: 40%;
+  margin: 0 50px 0 50px;
+  height: 1px;
+  content: "";
+  background: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+
+.h1-contact-us:after {
+  display: block;
+  width: 40%;
+  margin: 0 50px 50px 0;
+  height: 1px;
+  content: "";
+  background: #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(55, 56, 58, 0.4);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(#6D6F73, #37383a);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.About-us {
+  color: #FFFFFF;
+  width: 500px;
+  text-align: justify;
+}
+
+.contact-infos, .email, .location, .contactDesign {
+  color: #FFFFFF;
+}
+
+.email:hover, .contactDesign:hover, .location:hover {
+  color: #b4b0b0
+}
+
+.rightIconContact{
+  position: absolute;
+top: 810px;
+right: 490px;
+}
+
+.contactUsIcon{
+  text-align: justify;
+}
+.socialmedia {
+  text-align: justify;
+}
+
+.h2-connect-us {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.input-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F1F1F1;
+  padding-top: 25px;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.footerPanel, .footerPanelin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.footerPanelinsmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 600px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.footerPanelSubmit {
+  display: flex;
+  flex-direction: column;
+  background-color: #F1F1F1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 480px;
+  height: 150px;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+.footerPanelSubmitContact {
+  display: flex;
+  flex-direction: column;
+  background-color: #F1F1F1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.enterPanel {
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.loginRect {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 30px;
+}
+
+.tabChangetable {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.spesSize {
+  width: 100px;
+  height: 35px;
+}
+
+.footerPanel button, .manage button {
+  background-color: #FFFFFF;
+  color: #37383A;
+  width: 300px;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid #707070;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footerPanelin input, .footerPanelinsmall input {
+  background-color: #FFFFFF;
+  color: #37383A;
+  width: 300px;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid #707070;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.manage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.footerPanel .footerpaneldivmanage {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.footeraddAdminDiv {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerPanel button:hover, .manage button:hover {
+  background-color: #C0212E;
+  color: #FFFFFF;
+  border: none;
+}
+
+.input-login input {
+  background-color: #FFFFFF;
+  width: 400px;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid #707070;
+  padding-left: 30px;
+  text-align: left;
+  font-size: 15px;
+  color: #37383A;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.colorLinkForgot {
+  color: #707070;
+  font-size: 13px;
+}
+
+.colorLinkForgot:hover {
+  color: #C0212E;
+}
+
+.login1-button {
+  margin-top: 30px;
+  width: 100px;
+  height: 35px;
+  background-color: #c0212e;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+}
+
+.loginHeader, .headerPanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-button, .logout-button {
+  width: 100px;
+  height: 35px;
+  background-color: #FFFFFF;
+  color: #707070;
+  font-size: 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+}
+
+.home-button:hover, .logout-button:hover {
+  background-color: #A7A7A7;
+  color: #FFFFFF;
+}
+
+.welcomeLogin {
+  padding-top: 50px;
+}
+
+.diccs {
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.spanPanel {
+  margin-top: 130px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.spanManage {
+  padding-top: 150px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.Login_Graphic {
+  width: 70px;
+  position: fixed;
+  bottom: 0;
+  right: 70px;
+}
+
+.Admin_Panel_Graphic {
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 80px;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  width: 100px;
+  height: 35px;
+  background-color: #FFFFFF;
+  color: #707070;
+  border: 1px solid #707070;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+}
+
+.submit-button {
+  margin-top: 10px;
+  width: 100px;
+  height: 35px;
+  background-color: #C0212E;
+  color: #FFFFFF;
+  font-size: 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+}
+
+.cancel-button {
+  margin-right: 10px;
+}
+
+.submit-button {
+  margin-left: 10px;
+}
+
+.cancel-button:hover {
+  background-color: #707070;
+  color: #FFFFFF;
+  border: none;
+}
+
+.submit-button:hover, .login1-button:hover {
+  background-color: #991323;
+  color: #FFFFFF;
+  border: none;
+}
+
+.newEmail {
+  margin-right: 20px;
+}
+
+.tabChange {
+  text-align: left;
+  color: #707070;
+  width: auto;
+}
+
+.formSub {
+  margin: auto;
+  margin-top: 0px;
+}
+
+.inputchange {
+  background-color: #FFFFFF;
+  color: #37383A;
+  width: 270px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid #707070;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.saveCancelDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.L-Button {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+}
+
+.R-Button {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+
+.RRR-Button {
+  position: absolute;
+  right: 50px;
+  top: 85px;
+}
+
+.RRRR-Button {
+  position: absolute;
+  right: 50px;
+  top: 95px;
+}
+
+.addStudent-Button {
+  position: absolute;
+  left: 150px;
+  top: 30px;
+}
+
+.all-data-student {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-student {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.spacediv {
+  margin-bottom: 30px;
+}
+
+.topSpace {
+  margin-top: 50px;
+}
+
+.firstMarginTop {
+  margin-top: 80px;
+}
+
+.allStudent {
+  padding: 7px;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+  transition: all 0.1s ease 0s;
+  background-color: #C0212E;
+}
+
+.backButton {
+  margin-right: 5px;
+}
+
+.malefemalename, .colorFontAge {
+  color: #37383A;
+  font-size: 15px;
+}
+
+.smallSpaceRange {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.malefemalename .colorSpanGender {
+  color: #FFFFFF;
+}
+
+.inputSearch {
+  background-color: #FFFFFF;
+  color: #37383A;
+  width: 240px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  font-size: 15px;
+  text-align: right;
+  padding-right: 60px;
+}
+
+.inputGrade {
+  padding: 0px;
+  background-color: #FFFFFF;
+  color: #707070;
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.color-div-filter {
+  background-color: #a1a3a5;
+  border-radius: 10px;
+  padding: 20px 50px 30px 50px;
+}
+
+.divSelect {
+  margin-top: 20px;
+}
+
+.mini-filter {
+  text-align: left;
+}
+
+.title-page {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.name-filter {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+}
+
+input[type='range'] {
+  overflow: hidden;
+  -webkit-appearance: none;
+  pointer-events: none;
+  position: absolute;
+  left: 43%;
+  width: 300px;
+  outline: none;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.inputRange {
+  margin-right: 250px;
+  margin-bottom: 10px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 15px;
+  -webkit-appearance: none;
+  height: 15px;
+  border-radius: 30px;
+  cursor: ew-resize;
+  background: #bf212f;
+  pointer-events: all;
+  position: relative;
+  z-index: 1;
+  outline: 0;
+}
+
+.rangeSpan {
+  color: #C0212E;
+  font-weight: bold;
+}
+
+.hader-table-student-data {
+  background-color: #c0212e;
+  color: white;
+}
+
+.tableStudentdata tr td {
+  border: 1px solid #707070;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.tableStudentdata {
+  background-color: #FFFFFF;
+  color: #707070;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-collapse: collapse;
+  border: 2px solid white;
+}
+
+.tableAdmindata tr td {
+  border: 1px solid #707070;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+}
+
+.tableAdmindata {
+  background-color: #FFFFFF;
+  color: #707070;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border: 2px solid white;
+}
+
+.adminspantitle {
+  margin-top: 100px;
+}
+
+.all-add-student {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imgAddStudent {
+  width: 30%;
+}
+
+.contentPageAdd {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin: auto;
+}
+
+.addData tr td input[type='text'], .addData tr td input[type='email'] {
+  background-color: #FFFFFF;
+  color: #37383A;
+  width: 300px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.addData tr td select {
+  background-color: #FFFFFF;
+  color: #707070;
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align-last: center;
+}
+
+.inputGrade {
+  text-align-last: center;
+}
+
+.addData tr td .radioAddTable {
+  background-color: #FFFFFF;
+  color: #707070;
+  width: 300px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  font-size: 15px;
+  padding-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.classFlexRadio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.addData tr td {
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: left;
+  width: 150px;
+}
+
+.addData {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.classroomcheck {
+  margin: 10px 0 10px 40px;
+  display: flex;
+}
+
+.gradeLabel {
+  height: 33px;
+  width: 100px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+.inCheckbox {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.inCheckbox:checked~.check {
+  border-color: #c0212e;
+  box-shadow: 0px 0px 0px 15px #c0212e inset;
+}
+
+.inCheckbox::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.check {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 100px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 0px 0px #c0212e inset;
+  transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border-radius: 100px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 0px 0px #c0212e inset;
+  transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border-radius: 100px;
+  background-color: #C0212E;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  box-shadow: 0px 0px 0px 0px #c0212e inset;
+  transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+  cursor: pointer;
+}
+
+.PanelImg {
+  position: fixed;
+  top: 60%;
+  right: 30%;
+}
+
+.PanelImg2 {
+  position: fixed;
+  top: 25%;
+  right: 5%;
+}
+
+.PanelImg3 {
+  position: fixed;
+  top: 25%;
+  left: 5%;
+}
+
+.PanelImg4 {
+  position: fixed;
+  top: 55%;
+  left: 10%;
+}
+
+input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: 'FontAwesome';
+  content: '\f073';
+  position: absolute;
+  font-size: 18px;
+  top: 11px;
+  right: 12px;
+  color: #C0212E;
+}
+
+.addData tr td input[type='date'] {
+  padding-left: 35px;
+  background-color: #FFFFFF;
+  color: #707070;
+  width: 265px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="date"] {
+  position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+
+.colordelete {
+  color: #C0212E;
+}
+
+.colortdlink {
+  color: #C0212E;
+  text-decoration: none;
+}
+
+.editcolor {
+  color: #707070;
+}
+
+#filtersubmit {
+  position: absolute;
+  top: 123px;
+  left: 314px;
+  z-index: 1;
+  width: 50px;
+  color: #C0212E;
+  cursor: pointer;
+  width: 0;
+}
+
+.inputgragecolor {
+  position: absolute;
+  top: 246px;
+  left: 311px;
+  background-color: #C0212E;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FFFFFF;
+  font-size: 30px;
+}

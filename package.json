@@ -1,0 +1,29 @@
+{
+  "name": "school-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "back": "cd back && npm start",
+    "front": "cd front && npm start",
+    "start": "concurrently --kill-others-on-fail --names \"back,front\" \"npm run back\" \"npm run front\"",
+    "postinstall": "cd front && npm install && cd .. && cd back && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.0.2",
+    "i": "^0.3.6",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.6.0",
+    "react-router-dom": "^5.2.0",
+    "react-toastify": "^7.0.4",
+    "sql-template-strings": "^2.2.2",
+    "sqlite": "^4.0.21",
+    "sqlite3": "^5.0.2"
+  }
+}
